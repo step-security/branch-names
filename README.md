@@ -5,7 +5,7 @@
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 [![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge\&logo=macos\&logoColor=F0F0F0)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge\&logo=windows\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
-[![Public workflows that use this action.](https://img.shields.io/endpoint?style=for-the-badge\&url=https%3A%2F%2Fused-by.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fbranch-names%26badge%3Dtrue%26package_id%3DUGFja2FnZS0yOTQyNTYxMTIz)](https://github.com/search?o=desc\&q=tj-actions+branch-names+language%3AYAML\&s=\&type=Code)
+
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4df2ae51586b43f1bfd26e1aedc69965)](https://app.codacy.com/gh/step-security/branch-names/dashboard?utm_source=gh\&utm_medium=referral\&utm_content=\&utm_campaign=Badge_grade)
 [![CI](https://github.com/step-security/branch-names/workflows/CI/badge.svg)](https://github.com/step-security/branch-names/actions?query=workflow%3ACI)
@@ -51,7 +51,7 @@ Get a branch or tag name without the `/ref/*` prefix.
     steps:
       - name: Get branch names.
         id: branch-names
-        uses: step-security/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
+        uses: step-security/branch-names@v9
         
       - name: Running on the default branch.
         if: steps.branch-names.outputs.is_default == 'true'
@@ -77,22 +77,12 @@ Get a branch or tag name without the `/ref/*` prefix.
         # Outputs: "Default branch: main"
 ```
 
-If you feel generous and want to show some extra appreciation:
-
-Support this project with a :star:
-
-[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
-
-[buymeacoffee]: https://www.buymeacoffee.com/jackton1
-
-[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
-
 ## Inputs
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
 ```yaml
-- uses: step-security/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
+- uses: step-security/branch-names@v9
   id: branch-names
   with:
     # Replace forward slashes with hyphens 
@@ -151,7 +141,7 @@ on:
     steps:
       - name: Get branch names
         id: branch-names
-        uses: step-security/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
+        uses: step-security/branch-names@v9
 
       - name: Current branch names
         run: |
@@ -193,7 +183,7 @@ on:
     steps:
       - name: Get branch names
         id: branch-names
-        uses: step-security/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
+        uses: step-security/branch-names@v9
       
       - name: Current branch names
         run: |
@@ -245,7 +235,7 @@ on:
     steps:
       - name: Get branch names
         id: branch-names
-        uses: step-security/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
+        uses: step-security/branch-names@v9
         with:
           strip_tag_prefix: v # Optionally strip the leading `v` from the tag.
      
@@ -280,7 +270,7 @@ on:
     steps:
       - name: Get branch names.
         id: branch-names
-        uses: step-security/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
+        uses: step-security/branch-names@v9
       - uses: actions/checkout@v4
         with:
           ref: ${{ steps.branch-names.outputs.head_ref_branch }}
