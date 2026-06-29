@@ -2,8 +2,6 @@ name: CI
 
 on:
   push:
-    tags:
-      - '*'
     branches:
       - main
   pull_request:
@@ -17,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [ubuntu-latest, windows-latest, macos-latest]
+        platform: ${{ github.actor == 'dependabot[bot]' && fromJSON('["ubuntu-latest"]') || fromJSON('["ubuntu-latest", "macos-latest", "windows-latest"]') }}
 
     steps:
       - name: Checkout

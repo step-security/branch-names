@@ -6,16 +6,7 @@
 [![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge\&logo=macos\&logoColor=F0F0F0)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge\&logo=windows\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4df2ae51586b43f1bfd26e1aedc69965)](https://app.codacy.com/gh/step-security/branch-names/dashboard?utm_source=gh\&utm_medium=referral\&utm_content=\&utm_campaign=Badge_grade)
 [![CI](https://github.com/step-security/branch-names/workflows/CI/badge.svg)](https://github.com/step-security/branch-names/actions?query=workflow%3ACI)
-[![Update release version.](https://github.com/step-security/branch-names/actions/workflows/sync-release-version.yml/badge.svg)](https://github.com/step-security/branch-names/actions/workflows/sync-release-version.yml)
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Get a branch or tag name without the `/ref/*` prefix.
 
@@ -31,9 +22,6 @@ Get a branch or tag name without the `/ref/*` prefix.
     *   [`tag*`](#tag)
     *   [Other supported events](#other-supported-events)
     *   [Possible usage with actions/checkout](#possible-usage-with-actionscheckout)
-*   [Credits](#credits)
-*   [Report Bugs](#report-bugs)
-*   [Contributors ✨](#contributors-)
 
 ## Features
 
@@ -277,45 +265,3 @@ on:
 ```
 
 *   Free software: [MIT license](LICENSE)
-
-## Credits
-
-This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
-
-## Report Bugs
-
-Report bugs at https://github.com/step-security/branch-names/issues.
-
-If you are reporting a bug, please include:
-
-*   Your operating system name and version.
-*   Any details about your workflow that might be helpful in troubleshooting.
-*   Detailed steps to reproduce the bug.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
-<!-- prettier-ignore-start -->
-
-<!-- markdownlint-disable -->
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/loarca"><img src="https://avatars.githubusercontent.com/u/22898638?v=4?s=100" width="100px;" alt="Alejandro Loarca"/><br /><sub><b>Alejandro Loarca</b></sub></a><br /><a href="https://github.com/step-security/branch-names/commits?author=loarca" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://ianwoodard.me"><img src="https://avatars.githubusercontent.com/u/17186604?v=4?s=100" width="100px;" alt="Ian Woodard"/><br /><sub><b>Ian Woodard</b></sub></a><br /><a href="https://github.com/step-security/branch-names/commits?author=IanWoodard" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://home.boidol.dev/"><img src="https://avatars.githubusercontent.com/u/652404?v=4?s=100" width="100px;" alt="Raphael Boidol"/><br /><sub><b>Raphael Boidol</b></sub></a><br /><a href="https://github.com/step-security/branch-names/commits?author=boidolr" title="Documentation">📖</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
